@@ -21,7 +21,7 @@ namespace Capstone.Models
         [Display(Name = "Team Name")]
         public string teamOwned { get; set; }
 
-        [ForeignKey("Player Sheet"]
+        [ForeignKey("Player Sheet")]
         public int? playerId { get; set; }
         public PlayerProfile profile { get; set; }
     }
