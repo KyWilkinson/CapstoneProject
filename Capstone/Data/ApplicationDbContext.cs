@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Capstone.Models;
 
 namespace Capstone.Data
 {
@@ -12,5 +13,6 @@ namespace Capstone.Data
             : base(options)
         {
         }
+        public DbSet<Capstone.Models.PlayerProfile> PlayerProfile { get; set; }
     }
 }
